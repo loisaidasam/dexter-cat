@@ -6,8 +6,8 @@ module.exports = {
      * @param {AppData} dexter Container for all data used in this workflow.
      */
     run: function(step, dexter) {
-        var results = { foo: 'bar' };
-        //Call this.complete with the module's output.  If there's an error, call this.fail(message) instead.
-        this.complete(results);
+        var string1 = step.input('string1')[0];
+        var string2 = step.input('string2')[0];
+        this.complete({result: (string1 + string2)});
     }
 };
