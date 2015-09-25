@@ -9,6 +9,11 @@
             "id": "string2",
             "title":"String 2",
             "type":"string"
+        },
+        {
+            "id": "separate_with_space",
+            "title":"Separate with a space? (default 'true')",
+            "type":"string"
         }
     ],
     "outputs": [

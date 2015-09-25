@@ -8,6 +8,13 @@ module.exports = {
     run: function(step, dexter) {
         var string1 = step.input('string1')[0];
         var string2 = step.input('string2')[0];
-        this.complete({result: (string1 + string2)});
+        var separate_with_space = step.input('separate_with_space')[0] != 'false';
+        var result;
+        if (separate_with_space) {
+            result = string1 + " " + string2;
+        } else {
+            result = string1 + string2;
+        }
+        this.complete({result: result});
     }
 };
