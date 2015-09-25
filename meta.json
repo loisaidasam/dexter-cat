@@ -12,7 +12,7 @@
         },
         {
             "id": "separate_with_space",
-            "title":"Separate with a space? (default 'true')",
+            "title":"Sep w/ space?",
             "type":"string"
         }
     ],
